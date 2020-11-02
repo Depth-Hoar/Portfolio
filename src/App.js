@@ -52,29 +52,38 @@ function App() {
     <div className="App">
       
       <nav class="navbar navbar-dark my-nav" >
-        <a class="navbar-brand" href="#"></a>
+        
       </nav>
       
       <section id="about">
         <div>
           <center>
-            <img  style={{width: 400, height: 400, borderRadius: 400}} src="/images/IMG_5767.jpg" class="mw-50 dude" alt="headshot"/>
+            <img  style={{width: 300, height: 300, borderRadius: 300}} src="/images/IMG_5767.jpg" class="mw-50 dude" alt="headshot"/>
+            <div>
+              <h1 class="greeting">Hi I am Adam</h1>
+            </div>
           </center>
         </div>
 
       
-        <div class="container">
+        {/* <div class="container">
           <div class="row">
-            <div class="col-sm-4 offset-md-4 my-col">
+            
+            
+          </div>
+        </div> */}
+      </section>
+
+      <section id="experience">
+        <h2>blah blah blah</h2>
+      </section>
+
+      
+
+      {/* <div class="col-sm-4 offset-md-4 my-col">
             
               row 1 col 1
-            </div>
-            <div class="col-sm-4 offset-md-4 my-col">
-
-            </div>
-          </div>
-        </div>
-      </section>
+      </div> */}
         
       <Tilt className="Tilt br2 shadow-2" options={{ max : 25 }} style={{ height: 250, width: 250 }} >
         <div className="Tilt-inner"> <img style={{paddingTop: '5px'}} src="/images/Screen Shot 2020-10-31 at 2.33.55 PM.png" alt=""/> </div>
