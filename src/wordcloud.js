@@ -4,7 +4,7 @@
 // import "tippy.js/animations/scale.css";
 
    
-// // export const Portfolio = function() {
+// const wordCloud = function() {
 //     const words = [
 //         {
 //             text: 'told',
@@ -41,10 +41,15 @@
 //         transitionDuration: 1000
 //         };
 
-//     function SimpleWordcloud() {
-//         return <ReactWordcloud options={options} words={words} />
-//         }
+// }
+
+// //     function SimpleWordcloud() {
+// //         return <ReactWordcloud options={options} words={words} />
+// //         }
 
 
 
-// Portfolio.SimpleWordcloud();
+// // Portfolio.SimpleWordcloud();
+
+// export default wordCloud;
+

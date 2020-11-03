@@ -2,6 +2,8 @@ import './App.css';
 import 'tachyons';
 import Tilt from 'react-tilt';
 import 'bootstrap';
+import {ThemeProvider, Button} from '@material-ui/core';
+import theme from './theme'
 // import {words, options} from './wordcloud.js';
 // import {Portfolio} from './wordcloud.js';
 
@@ -49,6 +51,8 @@ const options = {
 
 function App() {
   return (
+
+    <ThemeProvider theme={theme}>
     <div className="App">
       
       <nav class="navbar navbar-dark my-nav" >
@@ -60,8 +64,11 @@ function App() {
           <center>
             <img  style={{width: 300, height: 300, borderRadius: 300}} src="/images/IMG_5767.jpg" class="mw-50 dude" alt="headshot"/>
             <div>
-              <h1 class="greeting">Hi I am Adam</h1>
+              <h1 class="greeting">Hi, I'm Adam</h1>
             </div>
+            <Button variant="contained" color="primary" className="getInTouch">
+              GET IN TOUCH
+            </Button>
           </center>
         </div>
 
@@ -93,7 +100,11 @@ function App() {
       
       <ReactWordcloud options={options} words={words} />
 
+      <h2>lets be internet BFFs (have icons with links below)</h2>
+
     </div>
+
+  </ThemeProvider>
     
     
   );
