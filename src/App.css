@@ -4,7 +4,7 @@
 
 .container {
   border: 1px solid black;
-  padding-top: 200px;
+  
 }
 
 .my-col {
@@ -27,6 +27,7 @@
   /* border: 1px solid red; */
   background-color: white;
   /* padding-bottom: 1em; */
+  
 }
 
 #about img {
@@ -46,10 +47,13 @@
   
 }
 
-#experience {
-  background-color: rgb(121, 104, 104);
-}
 
 .getInTouch {
   bottom: 150px;
+}
+
+.experience {
+  background-color: #1761B0;
+  bottom: 100px;
+  overflow: hidden;
 }
