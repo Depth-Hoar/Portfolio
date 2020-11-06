@@ -57,3 +57,72 @@
   bottom: 100px;
   overflow: hidden;
 }
+
+
+
+
+
+
+
+
+#experience {
+	background-color: #1761B0;
+	/* background-color: #4c6d86; */
+	padding: 6em 4em 5.6em;
+}
+
+#experience h2 {
+	color: #fff;
+	margin-bottom: .7em;
+}
+
+#experience .tag-line {
+	color: white;
+	font-size: 1.4em;
+}
+
+#experience i {
+	color: rgb(255, 138, 89);
+	font-size: 4em;
+}
+
+#experience h3 {
+	color: #fff;
+}
+
+.experience-topics p {
+	color: #ACAEB2;
+	font-family: "Maven pro", sans-serif;
+	/*font-weight: 500;*/
+}
+
+.experience-topics ul li {
+	list-style: none;
+	color: #bbd2ff;
+	font-family: "Maven pro", sans-serif;
+  font-weight: 500;
+  
+}
+
+.list-container {
+  display: flex;
+  
+}
+
+.list-container div{
+  border: 1px black solid;
+  padding: 10px;
+  flex: 1;
+}
+
+/* .box-1 {
+  flex: 1;
+}
+
+.box-2 {
+  flex: 1;
+}
+
+.box-3 {
+  flex: 1;
+} */

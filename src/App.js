@@ -4,6 +4,11 @@ import Tilt from 'react-tilt';
 import 'bootstrap';
 import {ThemeProvider, Button} from '@material-ui/core';
 import theme from './theme'
+
+// import {Container} from 'react-bootstrap';
+
+
+
 // import {words, options} from './wordcloud.js';
 // import {Portfolio} from './wordcloud.js';
 
@@ -81,7 +86,7 @@ function App() {
         </div> */}
       </section>
 
-      <section className="experience">
+      <section id="experience">
 
       <div class="row column">
 				<div class="small-12">
@@ -89,8 +94,8 @@ function App() {
 					<p class="text-center tag-line">Specialist in need. Generalist at heart.</p>
 				</div>
 			</div>
-			<div class="row">
-				<div class="small-12 medium-4 columns text-center experience-topics">
+			<div class="list-container">
+				<div class="box-1">
 					<i class="fi-laptop"></i>
 					<h3>Front-end</h3>
 					<ul>
@@ -111,7 +116,6 @@ function App() {
 						<li>Solidity</li>
 						<li>web3.js</li>
 						<li>SQL</li>
-						<li>Python</li>
 					</ul>
 				</div>
 				<div class="small-12 medium-4 columns text-center experience-topics">
@@ -126,15 +130,11 @@ function App() {
 					</ul>
 				</div>
 			</div>
+      
 
       </section>
 
       
-
-      {/* <div class="col-sm-4 offset-md-4 my-col">
-            
-              row 1 col 1
-      </div> */}
         
       <Tilt className="Tilt br2 shadow-2" options={{ max : 25 }} style={{ height: 250, width: 250 }} >
         <div className="Tilt-inner"> <img style={{paddingTop: '5px'}} src="/images/Screen Shot 2020-10-31 at 2.33.55 PM.png" alt=""/> </div>
