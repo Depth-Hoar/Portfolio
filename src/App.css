@@ -52,11 +52,7 @@
   bottom: 150px;
 }
 
-.experience {
-  background-color: #1761B0;
-  bottom: 100px;
-  overflow: hidden;
-}
+
 
 
 
@@ -68,7 +64,8 @@
 #experience {
 	background-color: #1761B0;
 	/* background-color: #4c6d86; */
-	padding: 6em 4em 5.6em;
+  padding: 6em 4em 5.6em;
+  overflow: hidden;
 }
 
 #experience h2 {
@@ -86,9 +83,6 @@
 	font-size: 4em;
 }
 
-#experience h3 {
-	color: #fff;
-}
 
 .experience-topics p {
 	color: #ACAEB2;
@@ -111,18 +105,24 @@
 
 .list-container div{
   border: 1px black solid;
+  color: #fff;
+	margin-bottom: .7em;
   padding: 10px;
   flex: 1;
+  text-align: center;
 }
 
-/* .box-1 {
-  flex: 1;
+.list-container ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
-.box-2 {
-  flex: 1;
+.text-center {
+  text-align: center;
 }
 
-.box-3 {
-  flex: 1;
-} */
+.portfolio {
+  overflow: hidden;
+  background-color: white;
+}

@@ -1,9 +1,10 @@
 import './App.css';
 import 'tachyons';
 import Tilt from 'react-tilt';
-import 'bootstrap';
-import {ThemeProvider, Button} from '@material-ui/core';
+
+import {ThemeProvider, Button, Grid} from '@material-ui/core';
 import theme from './theme'
+import Card from './Card'
 
 // import {Container} from 'react-bootstrap';
 
@@ -89,25 +90,22 @@ function App() {
       <section id="experience">
 
       <div class="row column">
-				<div class="small-12">
 					<h2 class="text-center">My Experience</h2>
 					<p class="text-center tag-line">Specialist in need. Generalist at heart.</p>
 				</div>
-			</div>
 			<div class="list-container">
-				<div class="box-1">
+				<div className="box-1">
 					<i class="fi-laptop"></i>
 					<h3>Front-end</h3>
 					<ul>
 						<li>html(5)</li>
 						<li>css(3)</li>
 						<li>Javascript</li>
-						<li>React</li>
-						<li>Bootstrap</li>
+						<li>React | Redux</li>
 						<li>material-UI</li>
 					</ul>
 				</div>
-				<div class="small-12 medium-4 columns text-center experience-topics">
+				<div className="box-2">
 					<i class="fi-database"></i>
 					<h3>Back-end</h3>
 					<ul>
@@ -115,23 +113,38 @@ function App() {
 						<li>NPM</li>
 						<li>Solidity</li>
 						<li>web3.js</li>
-						<li>SQL</li>
+						<li>PostgreSQL</li>
 					</ul>
 				</div>
-				<div class="small-12 medium-4 columns text-center experience-topics">
+				<div className="box-3">
 					<i class="fi-pencil"></i>
 					<h3>Tools</h3>
 					<ul>
 						<li>Truffle Framework</li>
 						<li>Blockchain</li>
 						<li>Ganache</li>
+						<li>OpenZeppelin</li>
 						<li>Github</li>
-						<li>Redux</li>
 					</ul>
 				</div>
 			</div>
-      
+      </section>
 
+      <section className="portfolio">
+        
+
+        <h4>dude what up</h4>
+        
+        <Grid container direction ="row" justify="center" alignItems="center" spacing={4}>
+          <Grid item xs={12} sm={6} md={4}>
+            <Card />
+          </Grid> 
+          <Grid item xs={12} sm={6} md={4}>
+            <Card />
+          </Grid> 
+        </Grid>
+
+        
       </section>
 
       
@@ -140,7 +153,6 @@ function App() {
         <div className="Tilt-inner"> <img style={{paddingTop: '5px'}} src="/images/Screen Shot 2020-10-31 at 2.33.55 PM.png" alt=""/> </div>
       </Tilt>
 
-      <script></script>
       
       <ReactWordcloud options={options} words={words} />
 
