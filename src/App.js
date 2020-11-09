@@ -4,14 +4,15 @@ import Tilt from 'react-tilt';
 
 import {ThemeProvider, Button, Grid} from '@material-ui/core';
 import theme from './theme'
-import Card from './Card'
+// import Card from './Card'
+import PortfolioCard from './PortfolioCard'
 
 // import {Container} from 'react-bootstrap';
 
 
 
 // import {words, options} from './wordcloud.js';
-// import {Portfolio} from './wordcloud.js';
+// import {WordCloud} from './wordcloud.js';
 
 import ReactWordcloud from 'react-wordcloud';
 import "tippy.js/dist/tippy.css";
@@ -132,15 +133,27 @@ function App() {
 
       <section className="portfolio">
         
-
-        <h4>dude what up</h4>
+      
+       
         
-        <Grid container direction ="row" justify="center" alignItems="center" spacing={4}>
-          <Grid item xs={12} sm={6} md={4}>
-            <Card />
+        <Grid container direction ="row" justify="center" alignItems="center"  >
+          <Grid item xs={12} sm={9} md={5}>
+            <PortfolioCard 
+            avatarSrc={"dude"}
+            title={"Depth Token Exchange"}
+            subtitle={"what"}
+            description={"A decentralized crypto currency exchange for ERC-20 tokens like depth tokens."}
+            imgSrc={"/images/Screen Shot 2020-09-21 at 7.26.33 AM.png"}
+            />
           </Grid> 
-          <Grid item xs={12} sm={6} md={4}>
-            <Card />
+          <Grid item xs={12} sm={9} md={5}>
+            <PortfolioCard
+            avatarSrc={"dude"}
+            title={"Brains Face"}
+            subtitle={"what"}
+            description={"Take prictures from the internet and it will recognize faces."}
+            imgSrc={"/images/Screen Shot 2020-09-21 at 7.07.52 AM.png"}
+            />
           </Grid> 
         </Grid>
 
