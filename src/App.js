@@ -1,6 +1,6 @@
 import './App.css';
 import 'tachyons';
-import Tilt from 'react-tilt';
+// import Tilt from 'react-tilt';
 
 import {ThemeProvider, Button, Grid} from '@material-ui/core';
 import theme from './theme'
@@ -66,7 +66,7 @@ function App() {
         
       </nav>
       
-      <section id="about">
+      <section id="intro">
         <div>
           <center>
             <img  style={{width: 300, height: 300, borderRadius: 300}} src="/images/IMG_5767.jpg" class="mw-50 dude" alt="headshot"/>
@@ -157,17 +157,22 @@ function App() {
           </Grid> 
         </Grid>
 
-        
       </section>
 
+      <section className="about">
+        <h1>About me</h1>
+        <p>say more about me here</p>
+
+      </section>
       
         
-      <Tilt className="Tilt br2 shadow-2" options={{ max : 25 }} style={{ height: 250, width: 250 }} >
+      {/* <Tilt className="Tilt br2 shadow-2" options={{ max : 25 }} style={{ height: 250, width: 250 }} >
         <div className="Tilt-inner"> <img style={{paddingTop: '5px'}} src="/images/Screen Shot 2020-10-31 at 2.33.55 PM.png" alt=""/> </div>
-      </Tilt>
+      </Tilt> */}
 
-      
-      <ReactWordcloud options={options} words={words} />
+      <Grid container direction ="row" justify="center" alignItems="center"  >
+        <ReactWordcloud options={options} words={words} className="wordCloud"/>
+      </Grid> 
 
       <h2>lets be internet BFFs (have icons with links below)</h2>
 

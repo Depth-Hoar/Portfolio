@@ -22,7 +22,7 @@
 
 
 
-#about {
+#intro {
   margin-top: 200px;
   /* border: 1px solid red; */
   background-color: white;
@@ -30,7 +30,7 @@
   
 }
 
-#about img {
+#intro img {
   position: relative;
   bottom: 150px;
 }
@@ -104,7 +104,6 @@
 }
 
 .list-container div{
-  border: 1px black solid;
   color: #fff;
 	margin-bottom: .7em;
   padding: 10px;
@@ -123,6 +122,21 @@
 }
 
 .portfolio {
-  overflow: hidden;
+  padding-top: 50px;
+  padding-bottom: 50px;
   background-color: white;
+}
+
+.about h1{
+  color: white;
+  text-align: center;
+}
+
+.about p {
+  color: white;
+  text-align: center;
+}
+
+.wordCloud {
+  border-color: red;
 }
