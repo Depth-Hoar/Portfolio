@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400,700');
+
+h1, h2, h3, h4, h5, h6, p {
+	font-family: "Lato", sans-serif !important;
+	font-weight: 900 !important;
+}
+
 .headshot {
   width: 100px;
 }
@@ -113,8 +120,9 @@
 
 .list-container ul{
   list-style-type: none;
-  padding: 0;
-  margin: 0;
+	color: #bbd2ff;
+	font-family: "Maven pro", sans-serif;
+	font-weight: 500;
 }
 
 .text-center {
@@ -128,15 +136,33 @@
 }
 
 .about h1{
+  padding-top: 50px;
   color: white;
   text-align: center;
 }
 
 .about p {
+  padding-top: 50px;
   color: white;
   text-align: center;
 }
 
-.wordCloud {
-  border-color: red;
+.footer {
+  background-color: #eb603b;
+  text-align: center;
 }
+
+.footer h1{
+  padding-top: 50px;
+  color: white;
+  text-align: center;
+}
+
+.footer p {
+  padding-top: 50px;
+  color: white;
+  text-align: center;
+}
+
+
+

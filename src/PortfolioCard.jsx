@@ -51,7 +51,7 @@ const PortfolioCard = (props) => {
             </Typography>
         </CardContent>
         <CardActions>
-            <Button size="small">Visit Website</Button>
+            <Button variant="contained" color="primary" size="small">Visit Website</Button>
         </CardActions>
         </Card>
     );

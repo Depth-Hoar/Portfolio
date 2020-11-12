@@ -1,60 +1,14 @@
 import './App.css';
 import 'tachyons';
 // import Tilt from 'react-tilt';
-
-import {ThemeProvider, Button, Grid} from '@material-ui/core';
+import {ThemeProvider, Button, Grid, Typography} from '@material-ui/core';
 import theme from './theme'
 // import Card from './Card'
 import PortfolioCard from './PortfolioCard'
-
-// import {Container} from 'react-bootstrap';
-
+import WordCloud from './wordcloud.jsx';
 
 
-// import {words, options} from './wordcloud.js';
-// import {WordCloud} from './wordcloud.js';
 
-import ReactWordcloud from 'react-wordcloud';
-import "tippy.js/dist/tippy.css";
-import "tippy.js/animations/scale.css";
-
-const words = [
-  {
-    text: 'told',
-    value: 64,
-  },
-  {
-    text: 'mistake',
-    value: 11,
-  },
-  {
-    text: 'thought',
-    value: 16,
-  },
-  {
-    text: 'bad',
-    value: 17,
-  },
-]
-// function SimpleWordcloud() {
-//   return <ReactWordcloud options={options} words={words} />
-// }
-
-const options = {
-  colors: ["#1f77b4", "#ff7f0e", "#2ca02c", "#d62728", "#9467bd", "#8c564b"],
-  enableTooltip: true,
-  deterministic: false,
-  fontFamily: "impact",
-  fontSizes: [50, 60],
-  fontStyle: "normal",
-  fontWeight: "normal",
-  padding: 0,
-  rotations: 0,
-  rotationAngles: [0, 0],
-  scale: "sqrt",
-  spiral: "archimedean",
-  transitionDuration: 1000
-};
 
 function App() {
   return (
@@ -136,21 +90,21 @@ function App() {
       
        
         
-        <Grid container direction ="row" justify="center" alignItems="center"  >
-          <Grid item xs={12} sm={9} md={5}>
+        <Grid container direction ="row" justify="center" alignItems="center" spacing={1}  >
+          <Grid item xs={12} sm={10} md={6}>
             <PortfolioCard 
-            avatarSrc={"dude"}
+            avatarSrc={"/favicon.ico"}
             title={"Depth Token Exchange"}
-            subtitle={"what"}
+            subtitle={""}
             description={"A decentralized crypto currency exchange for ERC-20 tokens like depth tokens."}
             imgSrc={"/images/Screen Shot 2020-09-21 at 7.26.33 AM.png"}
             />
           </Grid> 
-          <Grid item xs={12} sm={9} md={5}>
+          <Grid item xs={12} sm={10} md={6}>
             <PortfolioCard
-            avatarSrc={"dude"}
+            avatarSrc={"/favicon.ico"}
             title={"Brains Face"}
-            subtitle={"what"}
+            subtitle={""}
             description={"Take prictures from the internet and it will recognize faces."}
             imgSrc={"/images/Screen Shot 2020-09-21 at 7.07.52 AM.png"}
             />
@@ -171,10 +125,29 @@ function App() {
       </Tilt> */}
 
       <Grid container direction ="row" justify="center" alignItems="center"  >
-        <ReactWordcloud options={options} words={words} className="wordCloud"/>
+        <Grid item xs={12} sm={11} md={6}>
+          <WordCloud/>
+        </Grid>      
       </Grid> 
 
-      <h2>lets be internet BFFs (have icons with links below)</h2>
+      <section className="footer">
+        
+        <h1>Want to work with me?</h1>
+        <p>I am currently available for work</p>
+        
+      </section>
+
+      <section className="links">
+        
+        <h2>lets be internet BFFs (have icons with links below)</h2>
+        
+
+      </section>
+
+      <section className="copyRight">
+
+      </section>
+
 
     </div>
 
