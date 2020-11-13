@@ -13,7 +13,7 @@ import { CardMedia } from '@material-ui/core';
 
 const useStyles = makeStyles({
   root: {
-    minWidth: 600,
+    minWidth: 400,
     minHeight: 600
   },
   bullet: {

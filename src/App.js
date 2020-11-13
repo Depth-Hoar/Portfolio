@@ -1,7 +1,7 @@
 import './App.css';
 import 'tachyons';
 // import Tilt from 'react-tilt';
-import {ThemeProvider, Button, Grid, Typography} from '@material-ui/core';
+import {ThemeProvider, Button, Grid, Paper, Typography} from '@material-ui/core';
 import theme from './theme'
 // import Card from './Card'
 import PortfolioCard from './PortfolioCard'
@@ -43,14 +43,16 @@ function App() {
       </section>
 
       <section id="experience">
-
       <div class="row column">
 					<h2 class="text-center">My Experience</h2>
 					<p class="text-center tag-line">Specialist in need. Generalist at heart.</p>
 				</div>
 			<div class="list-container">
+      <Grid container direction="row" justify="center"  spacing={1}>
+      <Grid item xs={12} sm={11} md={3}>
+      
 				<div className="box-1">
-					<i class="fi-laptop"></i>
+					
 					<h3>Front-end</h3>
 					<ul>
 						<li>html(5)</li>
@@ -60,8 +62,11 @@ function App() {
 						<li>material-UI</li>
 					</ul>
 				</div>
+        
+        </Grid>
+        <Grid item xs={12} sm={11} md={3}>
 				<div className="box-2">
-					<i class="fi-database"></i>
+					
 					<h3>Back-end</h3>
 					<ul>
 						<li>NodeJS</li>
@@ -71,8 +76,10 @@ function App() {
 						<li>PostgreSQL</li>
 					</ul>
 				</div>
+        </Grid>
+        <Grid item xs={12} sm={11} md={3}>
 				<div className="box-3">
-					<i class="fi-pencil"></i>
+					
 					<h3>Tools</h3>
 					<ul>
 						<li>Truffle Framework</li>
@@ -82,6 +89,8 @@ function App() {
 						<li>Github</li>
 					</ul>
 				</div>
+        </Grid>
+      </Grid>
 			</div>
       </section>
 
@@ -91,7 +100,7 @@ function App() {
        
         
         <Grid container direction ="row" justify="center" alignItems="center" spacing={1}  >
-          <Grid item xs={12} sm={10} md={6}>
+          <Grid item xs={12} sm={11} md={5}>
             <PortfolioCard 
             avatarSrc={"/favicon.ico"}
             title={"Depth Token Exchange"}
@@ -100,7 +109,7 @@ function App() {
             imgSrc={"/images/Screen Shot 2020-09-21 at 7.26.33 AM.png"}
             />
           </Grid> 
-          <Grid item xs={12} sm={10} md={6}>
+          <Grid item xs={12} sm={11} md={5}>
             <PortfolioCard
             avatarSrc={"/favicon.ico"}
             title={"Brains Face"}

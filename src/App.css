@@ -71,7 +71,7 @@ h1, h2, h3, h4, h5, h6, p {
 #experience {
 	background-color: #1761B0;
 	/* background-color: #4c6d86; */
-  padding: 6em 4em 5.6em;
+  /* padding: 6em 4em 5.6em; */
   overflow: hidden;
 }
 
@@ -105,10 +105,14 @@ h1, h2, h3, h4, h5, h6, p {
   
 }
 
-.list-container {
+.box-2 h3 {
+  text-align: center;
+}
+
+/* .list-container {
   display: flex;
   
-}
+} */
 
 .list-container div{
   color: #fff;
