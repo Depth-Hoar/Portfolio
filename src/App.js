@@ -6,6 +6,13 @@ import theme from './theme'
 // import Card from './Card'
 import PortfolioCard from './PortfolioCard'
 import WordCloud from './wordcloud.jsx';
+import ComputerIcon from '@material-ui/icons/Computer';
+import StorageIcon from '@material-ui/icons/Storage';
+import BuildIcon from '@material-ui/icons/Build';
+import YouTubeIcon from '@material-ui/icons/YouTube';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import TwitterIcon from '@material-ui/icons/Twitter';
 
 
 
@@ -48,13 +55,14 @@ function App() {
 					<p class="text-center tag-line">Specialist in need. Generalist at heart.</p>
 				</div>
 			<div class="list-container">
-      <Grid container direction="row" justify="center"  spacing={1}>
+      <Grid container direction="row" justify="center" alignContent="center" alignItems="center" spacing={1}>
       <Grid item xs={12} sm={11} md={3}>
       
 				<div className="box-1">
 					
-					<h3>Front-end</h3>
+					<h2>Front-end</h2>
 					<ul>
+          <ComputerIcon color="primary" style={{ fontSize: 100 }} className="icon"/>
 						<li>html(5)</li>
 						<li>css(3)</li>
 						<li>Javascript</li>
@@ -66,9 +74,10 @@ function App() {
         </Grid>
         <Grid item xs={12} sm={11} md={3}>
 				<div className="box-2">
+					<h2>Back-end</h2>
 					
-					<h3>Back-end</h3>
 					<ul>
+          <StorageIcon color="primary" style={{ fontSize: 100 }} className="icon"/>
 						<li>NodeJS</li>
 						<li>NPM</li>
 						<li>Solidity</li>
@@ -80,8 +89,9 @@ function App() {
         <Grid item xs={12} sm={11} md={3}>
 				<div className="box-3">
 					
-					<h3>Tools</h3>
+					<h2>Tools</h2>
 					<ul>
+          <BuildIcon color="primary" style={{ fontSize: 100 }} className="icon"/>
 						<li>Truffle Framework</li>
 						<li>Blockchain</li>
 						<li>Ganache</li>
@@ -96,7 +106,7 @@ function App() {
 
       <section className="portfolio">
         
-      
+        <h1>Projects</h1>
        
         
         <Grid container direction ="row" justify="center" alignItems="center" spacing={1}  >
@@ -148,8 +158,12 @@ function App() {
 
       <section className="links">
         
-        <h2>lets be internet BFFs (have icons with links below)</h2>
+        <h2>lets be internet BFFs (Github linkedin soundcloud youtube spotify twitter) </h2>
         
+        <YouTubeIcon color="primary" style={{ fontSize: 100 }}/>
+        <GitHubIcon color="primary" style={{ fontSize: 100 }}/>
+        <LinkedInIcon color="primary" style={{ fontSize: 100 }}/>
+        <TwitterIcon color="primary" style={{ fontSize: 100 }}/>
 
       </section>
 
