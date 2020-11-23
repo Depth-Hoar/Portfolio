@@ -13,6 +13,7 @@ import YouTubeIcon from '@material-ui/icons/YouTube';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import TwitterIcon from '@material-ui/icons/Twitter';
+import Typical from 'react-typical';
 
 
 
@@ -31,8 +32,22 @@ function App() {
         <div>
           <center>
             <img  style={{width: 300, height: 300, borderRadius: 300}} src="/images/IMG_5767.jpg" class="mw-50 dude" alt="headshot"/>
-            <div>
-              <h1 class="greeting">Hi, I'm Adam</h1>
+            <div class="greeting">
+              <h1 >Hi, I'm Adam</h1>
+              <p  >I'm a{' '}
+              
+                <Typical
+                  loop={Infinity}
+                  wrapper="b"
+                  steps={[
+                    'Blockchain Developer',
+                    1000,
+                    'Youtuber',
+                    1000,
+                  ]}
+
+                />
+              </p>
             </div>
             <Button variant="contained" color="primary" className="getInTouch">
               GET IN TOUCH
@@ -59,10 +74,10 @@ function App() {
       <Grid item xs={12} sm={11} md={3}>
       
 				<div className="box-1">
-					
-					<h2>Front-end</h2>
-					<ul>
           <ComputerIcon color="primary" style={{ fontSize: 100 }} className="icon"/>
+					
+					<ul>
+					<h2>Front-end</h2>
 						<li>html(5)</li>
 						<li>css(3)</li>
 						<li>Javascript</li>
@@ -74,10 +89,10 @@ function App() {
         </Grid>
         <Grid item xs={12} sm={11} md={3}>
 				<div className="box-2">
-					<h2>Back-end</h2>
+          <StorageIcon color="primary" style={{ fontSize: 100 }} className="icon"/>
 					
 					<ul>
-          <StorageIcon color="primary" style={{ fontSize: 100 }} className="icon"/>
+					<h2>Back-end</h2>
 						<li>NodeJS</li>
 						<li>NPM</li>
 						<li>Solidity</li>
@@ -88,10 +103,10 @@ function App() {
         </Grid>
         <Grid item xs={12} sm={11} md={3}>
 				<div className="box-3">
-					
-					<h2>Tools</h2>
-					<ul>
           <BuildIcon color="primary" style={{ fontSize: 100 }} className="icon"/>
+					
+					<ul>
+					<h2>Tools</h2>
 						<li>Truffle Framework</li>
 						<li>Blockchain</li>
 						<li>Ganache</li>
@@ -115,7 +130,7 @@ function App() {
             avatarSrc={"/favicon.ico"}
             title={"Depth Token Exchange"}
             subtitle={""}
-            description={"A decentralized crypto currency exchange for ERC-20 tokens like depth tokens."}
+            description={"A decentralized crypto currency exchange for ERC-20 tokens like depth tokens. Must use Kovan test net with meta mask"}
             imgSrc={"/images/Screen Shot 2020-09-21 at 7.26.33 AM.png"}
             />
           </Grid> 
@@ -160,14 +175,21 @@ function App() {
         
         <h2>lets be internet BFFs (Github linkedin soundcloud youtube spotify twitter) </h2>
         
-        <YouTubeIcon color="primary" style={{ fontSize: 100 }}/>
-        <GitHubIcon color="primary" style={{ fontSize: 100 }}/>
-        <LinkedInIcon color="primary" style={{ fontSize: 100 }}/>
-        <TwitterIcon color="primary" style={{ fontSize: 100 }}/>
+        <div className="socialIcons">
+          <YouTubeIcon color="primary" style={{ fontSize: 50 }}/>
+          <GitHubIcon color="primary" style={{ fontSize: 50 }}/>
+          <LinkedInIcon color="primary" style={{ fontSize: 50 }}/>
+          <TwitterIcon color="primary" style={{ fontSize: 50 }}/>
+        </div>
+        <br/>
+        <br/>
 
       </section>
 
-      <section className="copyRight">
+      <section id="footer">
+
+        <p id="logo">AB</p>
+        <p>Copyright &copy; 2020 | Adam Bretzer</p>
 
       </section>
 
