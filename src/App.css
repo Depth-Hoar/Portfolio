@@ -5,9 +5,8 @@ h1, h2, h3, h4, h5, h6, p {
 	
 }
 
-.headshot {
-  width: 100px;
-}
+
+
 
 .container {
   border: 1px solid black;
@@ -39,7 +38,16 @@ h1, h2, h3, h4, h5, h6, p {
 
 #intro img {
   position: relative;
-  bottom: 150px;
+  bottom: 125px;
+}
+
+#intro h1 {
+  font-size: 90px;
+  color: #1761B0;
+}
+
+#intro p {
+  font-size: 50px;
 }
 
 .greeting {
@@ -171,12 +179,13 @@ ul li {
 .about p {
   padding-top: 50px;
   color: white;
-  text-align: center;
+  
 }
 
 .footer {
   background-color: #eb603b;
   text-align: center;
+  padding-bottom: 4em;
 }
 
 .footer h1{
@@ -186,7 +195,8 @@ ul li {
 }
 
 .footer p {
-  padding-top: 50px;
+  padding-top: 2em;
+  padding-bottom: 2em;
   color: white;
   text-align: center;
 }
@@ -199,6 +209,7 @@ ul li {
 
 .socialIcons {
   text-align: center;
+  padding-bottom: 4em;
 } 
 
 #footer {

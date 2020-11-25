@@ -1,7 +1,7 @@
 import './App.css';
 import 'tachyons';
 // import Tilt from 'react-tilt';
-import {ThemeProvider, Button, Grid, Paper, Typography} from '@material-ui/core';
+import {ThemeProvider, Button, Grid} from '@material-ui/core';
 import theme from './theme'
 // import Card from './Card'
 import PortfolioCard from './PortfolioCard'
@@ -13,6 +13,7 @@ import YouTubeIcon from '@material-ui/icons/YouTube';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import TwitterIcon from '@material-ui/icons/Twitter';
+import CloudIcon from '@material-ui/icons/Cloud';
 import Typical from 'react-typical';
 
 
@@ -31,18 +32,24 @@ function App() {
       <section id="intro">
         <div>
           <center>
-            <img  style={{width: 300, height: 300, borderRadius: 300}} src="/images/IMG_5767.jpg" class="mw-50 dude" alt="headshot"/>
+            <img  style={{width: 250, height: 250, borderRadius: 250}} src="/images/IMG_5767.jpg" class="mw-50 dude" alt="headshot"/>
             <div class="greeting">
               <h1 >Hi, I'm Adam</h1>
-              <p  >I'm a{' '}
+              <p  >
               
                 <Typical
                   loop={Infinity}
                   wrapper="b"
                   steps={[
-                    'Blockchain Developer',
+                    "I'm a Blockchain Developer",
                     1000,
-                    'Youtuber',
+                    "I'm a Web Developer",
+                    1000,
+                    "I'm a Musician",
+                    1000,
+                    "I'm a Youtuber",
+                    1000,
+                    "I solve problems",
                     1000,
                   ]}
 
@@ -67,7 +74,7 @@ function App() {
       <section id="experience">
       <div class="row column">
 					<h2 class="text-center">My Experience</h2>
-					<p class="text-center tag-line">Specialist in need. Generalist at heart.</p>
+					{/* <p class="text-center tag-line">Specialist in need. Generalist at heart.</p> */}
 				</div>
 			<div class="list-container">
       <Grid container direction="row" justify="center" alignContent="center" alignItems="center" spacing={1}>
@@ -148,9 +155,12 @@ function App() {
       </section>
 
       <section className="about">
-        <h1>About me</h1>
-        <p>say more about me here</p>
-
+          <h1>About me</h1>
+          <Grid container direction="row" justify="center" alignItems="center" spacing={1}  >
+          <Grid item xs={12} sm={11} md={7}>
+            <p>My name is Adam. I am a self-taught Blockchain Developer based in Alberta Canada. My mane focus has mostly been Etherum smart contracts for DeFi.</p>
+          </Grid>
+        </Grid>
       </section>
       
         
@@ -168,21 +178,23 @@ function App() {
         
         <h1>Want to work with me?</h1>
         <p>I am currently available for work</p>
+        <Button variant="contained" color="primary" >START NOW</Button>
+        
         
       </section>
 
       <section className="links">
         
-        <h2>lets be internet BFFs (Github linkedin soundcloud youtube spotify twitter) </h2>
+        <h2>lets be internet BFFs (Github linkedin soundcloud youtube spotify twitter dude) </h2>
         
         <div className="socialIcons">
-          <YouTubeIcon color="primary" style={{ fontSize: 50 }}/>
           <GitHubIcon color="primary" style={{ fontSize: 50 }}/>
           <LinkedInIcon color="primary" style={{ fontSize: 50 }}/>
-          <TwitterIcon color="primary" style={{ fontSize: 50 }}/>
+          <a href="https://twitter.com/AdamBretzer"><TwitterIcon color="primary" style={{ fontSize: 50 }}/></a>
+          <CloudIcon color="primary" style={{ fontSize: 50 }}/>
+          <YouTubeIcon color="primary" style={{ fontSize: 50 }}/>
         </div>
-        <br/>
-        <br/>
+        
 
       </section>
 
