@@ -56,7 +56,7 @@ function App() {
                 />
               </p>
             </div>
-            <Button variant="contained" color="primary" className="getInTouch">
+            <Button href="mailto:abretzer@gmail.com" variant="contained" color="primary" className="getInTouch">
               GET IN TOUCH
             </Button>
           </center>
@@ -139,6 +139,7 @@ function App() {
             subtitle={""}
             description={"A decentralized crypto currency exchange for ERC-20 tokens like depth tokens. Must use Kovan test net with meta mask"}
             imgSrc={"/images/Screen Shot 2020-09-21 at 7.26.33 AM.png"}
+            href={"https://depth-token-exchange.herokuapp.com"}
             />
           </Grid> 
           <Grid item xs={12} sm={11} md={5}>
@@ -148,6 +149,7 @@ function App() {
             subtitle={""}
             description={"Take prictures from the internet and it will recognize faces."}
             imgSrc={"/images/Screen Shot 2020-09-21 at 7.07.52 AM.png"}
+            href={"https://brains-face.herokuapp.com"}
             />
           </Grid> 
         </Grid>
@@ -159,6 +161,23 @@ function App() {
           <Grid container direction="row" justify="center" alignItems="center" spacing={1}  >
           <Grid item xs={12} sm={11} md={7}>
             <p>My name is Adam. I am a self-taught Blockchain Developer based in Alberta Canada. My mane focus has mostly been Etherum smart contracts for DeFi.</p>
+            {/* key words to use
+            Blockchain
+            DeFi
+            Dapp
+            desentralized applications
+            Flashloan
+            Ethereum
+            NFT 
+            Web Development 
+            Altcoin
+            Bitcoin
+            Distributed Ledger
+            Exchange
+            ICO
+            Wallet address
+            sats*/}
+
           </Grid>
         </Grid>
       </section>
@@ -178,21 +197,21 @@ function App() {
         
         <h1>Want to work with me?</h1>
         <p>I am currently available for work</p>
-        <Button variant="contained" color="primary" >START NOW</Button>
+        <Button href="mailto:abretzer@gmail.com" variant="contained" color="primary" >START NOW</Button>
         
         
       </section>
 
       <section className="links">
         
-        <h2>lets be internet BFFs (Github linkedin soundcloud youtube spotify twitter dude) </h2>
+        <h2>lets be internet BFFs</h2>
         
         <div className="socialIcons">
-          <GitHubIcon color="primary" style={{ fontSize: 50 }}/>
-          <LinkedInIcon color="primary" style={{ fontSize: 50 }}/>
+          <a href="https://github.com/Depth-Hoar"><GitHubIcon color="primary" style={{ fontSize: 50 }}/></a>
+          <a href="https://www.linkedin.com/in/adam-bretzer-64244180/"><LinkedInIcon color="primary" style={{ fontSize: 50 }}/></a>
           <a href="https://twitter.com/AdamBretzer"><TwitterIcon color="primary" style={{ fontSize: 50 }}/></a>
-          <CloudIcon color="primary" style={{ fontSize: 50 }}/>
-          <YouTubeIcon color="primary" style={{ fontSize: 50 }}/>
+          <a href="https://soundcloud.com/depthhoar"><CloudIcon color="primary" style={{ fontSize: 50 }}/></a>
+          <a href="https://twitter.com/AdamBretzer"><YouTubeIcon color="primary" style={{ fontSize: 50 }}/></a>
         </div>
         
 

@@ -31,7 +31,7 @@ const useStyles = makeStyles({
 
 const PortfolioCard = (props) => {
     const classes = useStyles();
-    const {avatarSrc, title, subtitle, description, imgSrc} = props;
+    const {avatarSrc, title, subtitle, description, imgSrc, href} = props;
     return (
         <Card className={classes.root} variant="outlined" >
         <CardHeader
@@ -51,7 +51,7 @@ const PortfolioCard = (props) => {
             </Typography>
         </CardContent>
         <CardActions>
-            <Button variant="contained" color="primary" size="small">Visit Website</Button>
+            <Button href={href} variant="contained" color="primary" size="small">Visit Website</Button>
         </CardActions>
         </Card>
     );

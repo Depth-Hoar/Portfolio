@@ -87,7 +87,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 #experience h2 {
 	color: #fff;
-	margin-bottom: .7em;
+  padding-top: 1em;
 }
 
 #experience .tag-line {
