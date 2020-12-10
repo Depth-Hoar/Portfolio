@@ -86,8 +86,14 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 #experience h2 {
+  font-size: 50px;
 	color: #fff;
   padding-top: 1em;
+}
+
+#experience h3 {
+	color: #fff;
+  
 }
 
 #experience .tag-line {
@@ -132,7 +138,7 @@ ul li {
 
 .list-container h2 {
   display: inline-block;
-  margin-left: ;
+  
   
   /* text-align: center;
   justify-items: center;
@@ -167,18 +173,21 @@ ul li {
 }
 
 .portfolio h1 {
+  font-size: 70px;
   text-align: center;
+  color: #eb603b;
+  
 }
 
 .about h1 {
   padding-top: 50px;
-  color: white;
+  color: #595959;
   text-align: center;
 }
 
 .about p {
   padding-top: 50px;
-  color: white;
+  color: #595959;
   
 }
 

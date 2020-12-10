@@ -35,7 +35,7 @@ function App() {
             <img  style={{width: 250, height: 250, borderRadius: 250}} src="/images/IMG_5767.jpg" class="mw-50 dude" alt="headshot"/>
             <div class="greeting">
               <h1 >Hi, I'm Adam</h1>
-              <p  >
+              <p>
               
                 <Typical
                   loop={Infinity}
@@ -43,11 +43,9 @@ function App() {
                   steps={[
                     "I'm a Blockchain Developer",
                     1000,
-                    "I'm a Web Developer",
+                    "I'm a Full-Stack Developer",
                     1000,
                     "I'm a Musician",
-                    1000,
-                    "I'm a Youtuber",
                     1000,
                     "I solve problems",
                     1000,
@@ -84,7 +82,7 @@ function App() {
           <ComputerIcon color="primary" style={{ fontSize: 100 }} className="icon"/>
 					
 					<ul>
-					<h2>Front-end</h2>
+					<h3>Front-end</h3>
 						<li>html(5)</li>
 						<li>css(3)</li>
 						<li>Javascript</li>
@@ -99,11 +97,11 @@ function App() {
           <StorageIcon color="primary" style={{ fontSize: 100 }} className="icon"/>
 					
 					<ul>
-					<h2>Back-end</h2>
+					<h3>Back-end</h3>
 						<li>NodeJS</li>
 						<li>NPM</li>
 						<li>Solidity</li>
-						<li>web3.js</li>
+            <li>IPFS</li>
 						<li>PostgreSQL</li>
 					</ul>
 				</div>
@@ -113,12 +111,14 @@ function App() {
           <BuildIcon color="primary" style={{ fontSize: 100 }} className="icon"/>
 					
 					<ul>
-					<h2>Tools</h2>
+					<h3>Tools</h3>
 						<li>Truffle Framework</li>
 						<li>Blockchain</li>
+            <li>web3.js</li>
 						<li>Ganache</li>
 						<li>OpenZeppelin</li>
 						<li>Github</li>
+            
 					</ul>
 				</div>
         </Grid>
@@ -160,7 +160,13 @@ function App() {
           <h1>About me</h1>
           <Grid container direction="row" justify="center" alignItems="center" spacing={1}  >
           <Grid item xs={12} sm={11} md={7}>
-            <p>My name is Adam. I am a self-taught Blockchain Developer based in Alberta Canada. My mane focus has mostly been Etherum smart contracts for DeFi.</p>
+            <p>Hi, my name is Adam. I am a self-taught Full-Stack Blockchain Developer based in Alberta Canada. 
+            My current focus has mostly been Etherum smart contracts for DeFi.
+            I have a deep desire to help build the future of finance. 
+            Even though I build on the Ethereum blockchain I am accepting of all blockchains. 
+            This is a fast moving industry with lots of inovations to explore. 
+            You can email me if you want to talk blockchain.
+            For those of us who understand it are responsible for spreading the good word of Bitcoin.</p>
             {/* key words to use
             Blockchain
             DeFi
@@ -211,7 +217,7 @@ function App() {
           <a href="https://www.linkedin.com/in/adam-bretzer-64244180/"><LinkedInIcon color="primary" style={{ fontSize: 50 }}/></a>
           <a href="https://twitter.com/AdamBretzer"><TwitterIcon color="primary" style={{ fontSize: 50 }}/></a>
           <a href="https://soundcloud.com/depthhoar"><CloudIcon color="primary" style={{ fontSize: 50 }}/></a>
-          <a href="https://twitter.com/AdamBretzer"><YouTubeIcon color="primary" style={{ fontSize: 50 }}/></a>
+          <a href="https://www.youtube.com/channel/UCvOwoM8qtEM0bBUglOdKa3Q"><YouTubeIcon color="primary" style={{ fontSize: 50 }}/></a>
         </div>
         
 
@@ -220,7 +226,7 @@ function App() {
       <section id="footer">
 
         <p id="logo">AB</p>
-        <p>Copyright &copy; 2020 | Adam Bretzer</p>
+        <p>Copyright &copy; 2021 | Adam Bretzer</p>
 
       </section>
 

@@ -41,7 +41,7 @@ const PortfolioCard = (props) => {
                 <MoreVertIcon />
             </IconButton>
             }
-            title={title}
+            center title={title}
             subheader={subtitle}
         />
         <CardMedia style={{height: "400px"}} image={imgSrc}/>
